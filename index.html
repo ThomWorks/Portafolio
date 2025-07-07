@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THOMIWORKS</title>
+    <link rel="shortcut icon" href="./assets/images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="progress-bar"></div>
+
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#inicio">
+                        <img src="./assets/images/THOMIWORKSLOGO.png">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <div class="image-container">
+                            <img src="./assets/images/fotoimagenyo.webp" alt="Thomas Ortiz">
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="title-animation">THOMAS ORTIZ</h1>
+                        <div class="role">
+                            <span class="badge">Técnico en Informática Personal y Profesional</span>
+                        </div>
+                        <p class="bio">Soy un desarrollador de aplicaciones web con 3 años de experiencia.
+                            <br>
+                            Tengo solidos conocimientos en <b>front-end HTML</b>, <b>CSS</b> y <b>JavaScript</b>. <br> Tambien cuento con conocimientos en <b>back-end PHP</b> y <b>SQL</b>.</p>
+                        <div class="cta-buttons">
+                            <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+                            <a href="./assets/Thomas_Ortiz_CV.pdf" download class="btn secondary"> <i class="fas fa-download"></i> Descargar CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scrollea</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Formación & Perfil</h2>
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <h3>Colegio San Juan</h3>
+                        <div class="date">2011 - 2017</div>
+                        <p>Educación Primaria</p>
+                    </div>
+                    <div class="edu-card highlight">
+                        <h3>Tecnica N 3 "Comunidad Educativa Roberto Arlt"</h3>
+                        <div class="date">2018 - Actualidad</div>
+                        <p>(Cursando último año)</p>
+                        <p class="subtitle">"Técnico superior en informática personal y profesional"</p>
+                    </div>
+                </div>
+                <div class="personal-info">
+                    <div class="info-group">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> <span>Teléfono:</span> 11 4184-6774</li>
+                            <li><i class="fas fa-envelope"></i> <span>Email:</span> thomasortiz11061106@gmail.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span>Ubicación:</span> Buenos Aires, Tortuguitas</li>
+                        </ul>
+                    </div>
+                    <div class="info-group">
+                        <h3>Idiomas</h3>
+                        <ul>
+                            <li><i class="fas fa-language"></i> <span>Inglés</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar" data-level="B1"></div>
+                                </div>
+                                <span class="level">Nivel B1 - Intermedio</span>
+                            </li>
+                            <li><i class="fas fa-language"></i> <span>Español</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar" data-level="Nativo"></div>
+                                </div>
+                                <span class="level">Nativo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Experiencias</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="date">2024 - Actualidad</div>
+                        <div class="content">
+                            <h3>Colegio San Juan</h3>
+                            <p class="role">Técnico Microinformático</p>
+                            <p class="description">Soporte técnico y mantenimiento de sistemas informáticos de la institución.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="date">2024 - Actualidad</div>
+                        <div class="content">
+                            <h3>Transporte Monzón</h3>
+                            <p class="role">Liquidación de sueldo (Excel)</p>
+                            <p class="description">Desarrollo y mantenimiento de sistemas de cálculo para liquidación de sueldos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="habilidades" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Habilidades y Conocimientos</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Desarrollo Web</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="HTML">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="CSS">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="PHP">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="SQL">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Git">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git - GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Otras Habilidades</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item" data-skill="Office">
+                                <i class="fas fa-file-excel"></i>
+                                <span>Office (Excel, Word, Etc)</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Redes">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Admin. Redes Informáticas</span>
+                                <div class="skill-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Teamwork">
+                                <i class="fas fa-users"></i>
+                                <span>Teamwork</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Proyectos</h2>
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Diseño</button>
+                </div>
+                <div class="projects-grid">
+                    <!-- Los proyectos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Ubicación</h3>
+                            <p>Buenos Aires, Tortuguitas</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>thomasortiz11061106@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Teléfono</h3>
+                            <p>11 4184-6774</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/thomiworks/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ThomWorks" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/thomiozn_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/images/THOMIWORKSLOGO.png" >
+                </div>
+                <p>&copy; 2025 ThomiWorks. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

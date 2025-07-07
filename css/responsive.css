@@ -1,0 +1,395 @@
+/* responsive.css - Estilos responsivos mejorados para el portafolio */
+
+/* Dispositivos extra grandes (desktops grandes, 1400px y más) */
+@media (max-width: 1400px) {
+    .profile-card {
+        max-width: 90%;
+    }
+}
+
+/* Dispositivos grandes (laptops/desktops, 992px y más) */
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .profile-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .timeline:before {
+        left: 40px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-right: 0;
+        padding-left: 80px;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd):before,
+    .timeline-item:nth-child(even):before {
+        left: 33px;
+        right: auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+/* Dispositivos medianos (tablets, 768px y más) */
+@media (max-width: 1300px) {
+    .nav-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        top: 15px;
+    }
+    
+    .nav-container {
+        padding: 10px 20px;
+        max-width: 95%;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(18, 18, 18, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 98;
+        transition: right var(--transition-medium);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+        width: 80%;
+    }
+    
+    /* Corregir el menú móvil */
+    .menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    /* Correcciones para la tarjeta de perfil */
+    .profile-card {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .profile-image, .profile-info {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .profile-image {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Correcciones para secciones grid */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    /* Mejorar el espaciado en secciones */
+    section {
+        padding: 80px 0;
+    }
+    
+    .hero-section {
+        padding: 100px 0 50px;
+    }
+    
+    /* Fix para animación de título */
+    .title-animation {
+        white-space: normal;
+        border-right: none;
+        animation: fadeIn 1s ease forwards;
+    }
+}
+
+/* Dispositivos pequeños (teléfonos móviles, 768px y menos) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-info .role {
+        display: flex;
+        justify-content: center;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+        text-align: center;
+    }
+    
+    .bio {
+        text-align: center;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .personal-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Ajustes para los filtros de proyectos */
+    .projects-filter {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .filter-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    
+    /* Ajustes para la sección de contacto */
+    .info-item {
+        padding: 15px;
+    }
+    
+    .info-item i {
+        font-size: 1.6rem;
+    }
+    
+    /* Ajuste para el footer */
+    .footer-logo img {
+        width: 12rem;
+    }
+}
+
+/* Dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        padding: 8px 15px;
+    }
+    
+    .logo a img {
+        width: 10rem;
+        margin-left: 0;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .profile-info {
+        padding: 30px 20px;
+    }
+
+    .projects-filter {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto 25px;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 8px 0;
+    }
+
+    .skill-category h3 {
+        font-size: 1.3rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .skill-item i {
+        font-size: 1.5rem;
+    }
+
+    .skill-item span {
+        font-size: 0.8rem;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .timeline-item .content {
+        padding: 15px;
+    }
+
+    .profile-image .image-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+    
+    /* Ajustes específicos para textos muy extensos */
+    .edu-card h3 {
+        font-size: 1.1rem;
+        word-break: break-word;
+    }
+    
+    /* Arreglos para secciones de experiencia */
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+    
+    .timeline-item:before {
+        width: 12px;
+        height: 12px;
+    }
+    
+    /* Social links más pequeños */
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Dispositivos extremadamente pequeños */
+@media (max-width: 360px) {
+    .profile-image .image-container {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.6rem;
+    }
+    
+    .badge {
+        font-size: 0.65rem;
+        padding: 5px 10px;
+    }
+    
+    .bio {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .skill-item {
+        padding: 10px;
+    }
+    
+    .info-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .info-item p {
+        font-size: 0.85rem;
+    }
+}

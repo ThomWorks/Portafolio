@@ -1,0 +1,168 @@
+/* animations.css - Animaciones mejoradas para el portafolio */
+
+/* Animación de aparición fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de subida slideUp */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de entrada desde la izquierda slideInLeft */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de entrada desde la derecha slideInRight */
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de "typing" para el texto */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Animación de escala pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animación de rotación rotate */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación para menú móvil */
+@keyframes menuFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación para el botón de menú */
+@keyframes menuTogglePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(126, 87, 194, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(126, 87, 194, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(126, 87, 194, 0);
+    }
+}
+
+/* Animación para el overlay del menú */
+@keyframes overlayFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de títulos con borde */
+.title-animation {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+    border-right: 3px solid var(--primary-color);
+}
+
+/* Clase para elementos que aparecen con fadein */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+/* Clase para elementos que aparecen desde abajo */
+.slide-up {
+    animation: slideUp 1s ease forwards;
+    opacity: 0;
+}
+
+/* Clase para elementos que aparecen desde la izquierda */
+.slide-in-left {
+    animation: slideInLeft 1s ease forwards;
+    opacity: 0;
+}
+
+/* Clase para elementos que aparecen desde la derecha */
+.slide-in-right {
+    animation: slideInRight 1s ease forwards;
+    opacity: 0;
+}
+
+/* Animación para la carga de las barras de progreso en habilidades */
+.animate-progress-bar .progress {
+    animation: progress-animation 1.5s ease-out forwards;
+}
+
+@keyframes progress-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
