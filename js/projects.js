@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'design',
             image: './assets/images/proyectocolibri.png',
             tech: 'HTML / CSS / JavaScript / Canva',
-            tags: ['HTML', 'CSS', 'JavaScript', 'Canva'],
+            tags: ['HTML', 'CSS', 'JavaScript', 'PHP'],
             description: 'Proyecto colibrí es una iniciativa que busca unir fuerzas para combatir los problemas medioambientales.',
             demoLink: 'https://proyectocolibri.com.ar/'
         },
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'web',
             image: './assets/images/plataformaeducativa.png',
             tech: 'HTML / PHP / CSS / JavaScript / SQL',
-            tags: ['HTML', 'PHP', 'CSS', 'JavaScript', 'SQL'],
+            tags: ['HTML', 'REACT', 'PHP', 'JavaScript', 'SQL'],
             description: 'Sistema LMS (Learning Management System) con cursos interactivos, evaluaciones y seguimiento de progreso del estudiante.',
             demoLink: 'https://thomiworks.com.ar/colegiosanjuan/dashboard/login.php',
         },
@@ -33,30 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'web',
             image: './assets/images/barriogestion.png',
             tech: 'HTML / JavaScript / CSS / PHP / SQL',
-            tags: ['HTML', 'JavaScript', 'CSS', 'PHP', 'SQL'],
+            tags: ['HTML', 'NODE', 'CSS', 'PHP', 'SQL'],
             description: 'Aplicación para gestión de finanzas personales con dashboards interactivos, seguimiento de gastos y planificación de metas.',
-            demoLink: 'https://panchosrv.bringfeel.com.ar/tesis/'
-        },
-        {
-            id: 4,
-            title: 'EduControl',
-            category: 'web',
-            image: './assets/images/educontrol.png',
-            tech: 'HTML / JavaScript / CSS / PHP / SQL',
-            tags: ['HTML', 'JavaScript', 'CSS'],
-            description: 'Una landing page para una aplicación que se encarga de administrar un colegio secundario. Controla las asistencias, notas, horarios, etc',
-            demoLink: 'https://thomworks.github.io/ThomWorks/'
-        },
-        {
-            id: 5,
-            title: 'Travel+',
-            category: 'web',
-            image: './assets/images/travelplus.png',
-            tech: 'HTML / JavaScript / CSS / PHP / SQL',
-            tags: ['HTML', 'JavaScript', 'CSS'],
-            description: 'Es una herramienta web que permite a los usuarios planificar y organizar sus viajes de manera sencilla y gratuita, sin necesidad de registro ni instalación de software.',
-            demoLink: 'https://thomworks.github.io/Travel-/'
-        },
+            demoLink: 'https://panchosrv.bringfeel.com.ar/tesisde/'
+        }
     ];
 
     // Elementos DOM
